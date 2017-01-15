@@ -1,7 +1,4 @@
 // @flow
-import 'react-mdl/extra/material.css';
-import 'react-mdl/extra/material.js';
-import { Button } from 'react-mdl';
 import React from 'react';
 import Key from './key';
 
@@ -10,8 +7,6 @@ function Keypad(props: Object) {
   const row2 = ['4','5','6','-'];
   const row3 = ['7','8','9','*'];
   const row4 = ['0','.','blank','/'];
-
-  const clear = ["CLEAR", "UNDO"];
 
   let row1KeySet = row1.map((item) => {
     return (
@@ -53,15 +48,6 @@ function Keypad(props: Object) {
     );
   });
 
-  // let clearKeySet = clear.map((clearKey) => {
-  //   return (
-  //     <Key
-  //         style={{width: '75px', margin: '15px', fontWeight: '700', backgroundColor: '#f44336', color: '#fff'}}
-  //         key={clearKey}
-  //         value={clearKey}
-  //         handleClick={props.handleClearClick} />);
-  // });
-
   let clearKeySet = (
     <div>
       <Key
@@ -75,15 +61,15 @@ function Keypad(props: Object) {
     </div>
   );
 
+  let equalKey = <Key value="=" handleClick={props.calculate}></Key>;
+
   return (
     <div>
       {row1KeySet}
       {row2KeySet}
       {row3KeySet}
       {row4KeySet}
-      <br />
-      <Button raised ripple style={{margin: '4px 1px 1px', width: '268px', fontWeight: '900', backgroundColor: '#4caf50', color: '#fff'}} onClick={props.calculate}>{'\uFF1D'}</Button>
-      <br />
+      {equalKey}
       {clearKeySet}
     </div>
   );

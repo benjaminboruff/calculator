@@ -104,21 +104,14 @@ class Calculator extends Component<void, void, State> {
 
   render() {
     return (
-      <div className="">
+      <div>
         <Layout>
           <Content className="App">
-            <Card shadow={3} style={{width: '300px', height: '500px',
-                                    margin: 'auto', marginTop: '150px',
-                                    borderRadius: '10px',
-                                    backgroundColor: '#f5f5f5'}}>
-              <CardTitle expand style={{backgroundColor: '#1565c0', color: '#fff'}}>
+            <Card shadow={3} id="maincard">
+              <CardTitle expand id="cardtitle">
                 <h4 style={{margin: 'auto'}}>Calculator</h4>
               </CardTitle>
-              <CardText style={{width: '80%', height: '100px', margin: 'auto', marginTop: '10px',
-                                marginBottom: '10px',
-                                backgroundColor: '#e0e0e0',
-                                borderRadius: '5px',
-                                color: '#000'}}>
+              <CardText id="cardtext">
                 <Output result={this.state.result} input={this.state.input} />
               </CardText>
               <CardActions border>
@@ -128,12 +121,14 @@ class Calculator extends Component<void, void, State> {
                   handleClearClick={this.handleClearClick} />
               </CardActions>
             </Card>
-              <div style={{color: '#f5f5f5', textAlign: 'center', position: 'absolute', width: '100%', marginTop: '25px'}}>
-                Designed and coded by <a style={{textDecoration: 'none', color: '#1565c0'}} href="http://stackoverflow.com/story/benjaminboruff">Benjamin H Boruff</a> &copy;2017
+              <div id="copy">
+                Designed and coded by
+                <a href="http://stackoverflow.com/story/benjaminboruff">
+                   <span>Benjamin H Boruff</span>
+                </a> &copy;2017
               </div>
           </Content>
         </Layout>
-
       </div>
     );
   }

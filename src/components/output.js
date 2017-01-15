@@ -1,11 +1,12 @@
 // @flow
 import React from 'react';
+import './output.css';
 
 function Output(props: Object) {
   return (
     <div>
-      <div  style={{margin: 'auto', paddingRight: '3px', textAlign: 'right', fontSize: '1.6em'}}>{props.result}</div>
-      <p style={{margin: 'auto', marginTop: '60px', textAlign: 'right'}}> {props.input}</p>
+      <div id="result">{props.result}</div>
+      <p id="input">{props.input}</p>
     </div>
   );
 }

@@ -5,6 +5,9 @@
   font-weight: 700;
   background-color: #f44336;
   color: #fff;
+  -webkit-transition-duration: 0.3s; /* Safari */
+  transition-duration: 0.3s;
+  overflow: hidden;
 }
 
 #undo {
@@ -13,12 +16,65 @@
   font-weight: 700;
   background-color: #f44336;
   color: #fff;
+  -webkit-transition-duration: 0.3s; /* Safari */
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+#undo:after, #clear:after {
+    content: "";
+    background: #ef5350;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.3s
+}
+
+#undo:active:after, #clear:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+#clear:hover, #undo:hover {
+  background-color: #bf360c;
 }
 
 #equals {
-  width: 210px;
-  margin-left: 25px;
+  margin: 4px 1px 1px;
+  width: 268px;
   font-weight: 900;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+#equals:after{
+    content: "";
+    background: #66bb6a;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.3s
+}
+
+#equals:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+#equals:hover {
+  background-color: #1b5e20;
 }
 
 #blank {
@@ -36,6 +92,29 @@
   background-color: #1565c0;
   color: #fff;
   font-weight: 900;
+  -webkit-transition-duration: 0.3s; /* Safari */
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.numops:after {
+    content: "";
+    background: #337ab7;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.3s
+}
+
+.numops:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }
 
 .numops:hover {

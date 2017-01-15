@@ -40,8 +40,7 @@ function Key (props: Object) {
         return(
           <Button
             id={props.value.toLowerCase()}
-            // bsStyle="danger"
-            // style={props.style}
+            raised
             value={props.value}
             onClick={props.handleClick}>
             {symbol}
@@ -54,8 +53,7 @@ function Key (props: Object) {
         return(
           <Button
             id="equals"
-            //bsSize="large"
-            // bsStyle="success"
+            raised
             value={props.value}
             onClick={props.handleClick}>
             {symbol}
@@ -68,7 +66,7 @@ function Key (props: Object) {
         return(
           <Button
             className="numops"
-            // bsStyle="primary"
+            raised
             value={props.value}
             onClick={props.handleClick}>
             {symbol}
@@ -81,7 +79,7 @@ function Key (props: Object) {
         return(
           <Button
             className="numops"
-            // bsStyle="primary"
+            raised
             value={props.value}
             onClick={props.handleClick}>
             {symbol}
@@ -109,18 +107,6 @@ function Key (props: Object) {
     // no value prop was found
     return <Button>NO VALUE</Button>;
   }
-
-  // MDL specific
-    // if(props.accent) {
-    //   return(
-    //     <Button raised accent
-    //       style={props.style}
-    //       value={props.value}
-    //       onClick={props.handleClick}>
-    //       {symbol}
-    //     </Button>
-    //   );
-    // }
 
 }
 
