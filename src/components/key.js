@@ -3,7 +3,7 @@ import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
 import { Button } from 'react-mdl';
 import React from 'react';
-//import './key.css';
+import './key.css';
 
 function Key (props: Object) {
   let symbol;
@@ -41,7 +41,7 @@ function Key (props: Object) {
           <Button
             id={props.value.toLowerCase()}
             // bsStyle="danger"
-            style={props.style}
+            // style={props.style}
             value={props.value}
             onClick={props.handleClick}>
             {symbol}
@@ -54,7 +54,7 @@ function Key (props: Object) {
         return(
           <Button
             id="equals"
-            bsSize="large"
+            //bsSize="large"
             // bsStyle="success"
             value={props.value}
             onClick={props.handleClick}>

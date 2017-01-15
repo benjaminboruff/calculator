@@ -1,11 +1,18 @@
 #clear {
-  margin-left: 25px;
+  margin: 7px 110px 0 8px;
+  padding-left: 14px;
   width: 75px;
+  font-weight: 700;
+  background-color: #f44336;
+  color: #fff;
 }
 
 #undo {
-  margin-left: 60px;
+  margin: 7px 8px 0 8px;
   width: 75px;
+  font-weight: 700;
+  background-color: #f44336;
+  color: #fff;
 }
 
 #equals {
@@ -15,8 +22,8 @@
 }
 
 #blank {
-  width: 45px;
-  margin: 2px 4px 2px;
+  /*width: 45px; */
+  margin: 1px 2px 2px;
   background-color: #f5f5f5;
   color: #f5f5f5;
   border: none;
@@ -24,7 +31,9 @@
 }
 
 .numops {
-  width: 50px;
-  margin: 2px 4px 2px;
+  /*width: 50px;*/
+  margin: 1px 2px 2px;
+  background-color: #1565c0;
+  color: #fff;
   font-weight: 900;
 }
