@@ -35,7 +35,7 @@ function Key (props: Object) {
     }
 
     return(
-      <Button raised colored
+      <Button raised
         style={props.style}
         value={props.value}
         onClick={props.handleClick}>

@@ -12,7 +12,7 @@ function Keypad(props: Object) {
   let numberKeySet = numbers.map((number) => {
     return (
       <Key
-          style={{margin: '2px', fontWeight: '900'}}
+          style={{margin: '2px', fontWeight: '900', backgroundColor: '#1565c0', color: '#fff'}}
           key={number}
           value={number}
           handleClick={props.handleButtonClick} />);
@@ -20,8 +20,7 @@ function Keypad(props: Object) {
   let operatorKeySet = operators.map((operator) => {
     return (
       <Key
-          accent="accent"
-          style={{margin: '2px', fontWeight: '900'}}
+          style={{margin: '2px', fontWeight: '900', backgroundColor: '#1565c0', color: '#fff'}}
           key={operator}
           value={operator}
           handleClick={props.handleButtonClick} />);
@@ -29,7 +28,7 @@ function Keypad(props: Object) {
   let clearKeySet = clear.map((clearKey) => {
     return (
       <Key
-          style={{width: '75px', margin: '15px', fontWeight: '700'}}
+          style={{width: '75px', margin: '15px', fontWeight: '700', backgroundColor: '#f44336', color: '#fff'}}
           key={clearKey}
           value={clearKey}
           handleClick={props.handleClearClick} />);
@@ -40,7 +39,7 @@ function Keypad(props: Object) {
       <br />
       {operatorKeySet}
       <br />
-      <Button raised accent ripple style={{margin: '1px', width: '268px', fontWeight: '900'}} onClick={props.calculate}>{'\uFF1D'}</Button>
+      <Button raised ripple style={{margin: '4px 1px 1px', width: '268px', fontWeight: '900', backgroundColor: '#4caf50', color: '#fff'}} onClick={props.calculate}>{'\uFF1D'}</Button>
       <br />
       {clearKeySet}
 

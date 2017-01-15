@@ -111,7 +111,7 @@ class Calculator extends Component<void, void, State> {
                                     margin: 'auto', marginTop: '150px',
                                     borderRadius: '10px',
                                     backgroundColor: '#f5f5f5'}}>
-              <CardTitle expand style={{background: '#3E4EB8', color: '#fff'}}>
+              <CardTitle expand style={{backgroundColor: '#1565c0', color: '#fff'}}>
                 <h4 style={{margin: 'auto'}}>Calculator</h4>
               </CardTitle>
               <CardText style={{width: '80%', height: '100px', margin: 'auto', marginTop: '10px',
@@ -129,7 +129,7 @@ class Calculator extends Component<void, void, State> {
               </CardActions>
             </Card>
               <div style={{color: '#f5f5f5', textAlign: 'center', position: 'absolute', width: '100%', marginTop: '25px'}}>
-                Designed and coded by <a style={{textDecoration: 'none', color: '#3E4EB8'}} href="http://stackoverflow.com/story/benjaminboruff">Benjamin H Boruff</a> &copy;2017
+                Designed and coded by <a style={{textDecoration: 'none', color: '#1565c0'}} href="http://stackoverflow.com/story/benjaminboruff">Benjamin H Boruff</a> &copy;2017
               </div>
           </Content>
         </Layout>
