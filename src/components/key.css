@@ -3,8 +3,8 @@
   padding-left: 14px;
   width: 75px;
   font-weight: 700;
-  background-color: #f44336;
-  color: #fff;
+  background-color: #e53935;
+  color: #f5f5f5;
   -webkit-transition-duration: 0.3s; /* Safari */
   transition-duration: 0.3s;
   overflow: hidden;
@@ -14,8 +14,8 @@
   margin: 7px 8px 0 8px;
   width: 75px;
   font-weight: 700;
-  background-color: #f44336;
-  color: #fff;
+  background-color: #e53935;
+  color: #f5f5f5;
   -webkit-transition-duration: 0.3s; /* Safari */
   transition-duration: 0.3s;
   overflow: hidden;
@@ -42,20 +42,20 @@
 }
 
 #clear:hover, #undo:hover {
-  background-color: #bf360c;
+  background-color: #d32f2f;
 }
 
 #equals {
   margin: 4px 1px 1px;
   width: 268px;
   font-weight: 900;
-  background-color: #4caf50;
-  color: #fff;
+  background-color: #43a047;
+  color: #f5f5f5;
 }
 
 #equals:after{
     content: "";
-    background: #66bb6a;
+    background: #4caf50;
     display: block;
     position: absolute;
     padding-top: 300%;
@@ -74,11 +74,10 @@
 }
 
 #equals:hover {
-  background-color: #1b5e20;
+  background-color: #388e3c;
 }
 
 #blank {
-  /*width: 45px; */
   margin: 1px 2px 2px;
   background-color: #f5f5f5;
   color: #f5f5f5;
@@ -87,10 +86,9 @@
 }
 
 .numops {
-  /*width: 50px;*/
   margin: 1px 2px 2px;
-  background-color: #1565c0;
-  color: #fff;
+  background-color: #1976d2;
+  color: #f5f5f5;
   font-weight: 900;
   -webkit-transition-duration: 0.3s; /* Safari */
   transition-duration: 0.3s;
@@ -118,5 +116,5 @@
 }
 
 .numops:hover {
-  background-color: #0d47a1;
+  background-color: #1565c0;
 }
