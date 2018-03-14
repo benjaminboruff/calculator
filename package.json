@@ -1,6 +1,6 @@
 {
   "name": "calculator",
-  "homepage": "http://benjaminboruff.github.io/calculator",
+  "homepage": "https://calculator.boruff.me/",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
